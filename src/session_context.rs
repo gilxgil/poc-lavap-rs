@@ -36,7 +36,7 @@ impl ConsumerSessionContext {
                 // FIXME: u64 sometimes encodes incorrectly with this implementation, truncate to u32 for now
                 session_id: (Uuid::new_v4().as_u128() as u32) as u64,
                 cu_sum: 0,
-                relay_num: 0,
+                relay_num: 1,
             }})
     }
 
